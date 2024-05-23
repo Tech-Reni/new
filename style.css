@@ -167,6 +167,9 @@ body{
         background-size: 350%;
         background-repeat: no-repeat;   
     }
+    .navbar{
+        margin-top: 8px;
+    }
     .logo_name{
         font-size: 14px;
     }

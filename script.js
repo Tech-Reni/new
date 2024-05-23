@@ -49,3 +49,10 @@ button.addEventListener('click', () => {
     quoteElement.textContent = `"${randomQuote.quote}"`;
     verseElement.textContent = randomQuote.verse;
 });
+
+const hamburger = document.getElementById("hamburger");
+const slide_nav_cont = document.getElementById("slide_nav_cont"); 
+
+hamburger.addEventListener("click",  () => {
+    slide_nav_cont.classList.toggle("active");
+})

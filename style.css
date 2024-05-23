@@ -42,6 +42,7 @@ body{
     justify-content: space-around;
     background: transparent;
     margin-top: 20px;
+    z-index: 2;
 }
 
 .img_cont{
@@ -121,7 +122,7 @@ body{
     border-radius: 100%;
     transition: all 0.3s ease;
     position: fixed;
-    z-index: 2;
+    z-index: 5;
     background-color: darkblue;
 }
 
@@ -133,7 +134,7 @@ body{
     background-color: darkblue;
     margin-top: calc(50vh - 200px);
     margin-left: calc(50% - 40%);
-    z-index: 2;
+    z-index: 5;
     transition: all 0.3s ease;
 }
 

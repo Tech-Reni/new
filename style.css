@@ -28,7 +28,7 @@ body{
 
 .top{
     background-image: url('img/cross.jpg');
-    background-size: contain;
+    background-size: 140%;
     background-position: center;
     background-color: rgba(0, 0, 0, 0.8);
     background-blend-mode: darken;
@@ -165,6 +165,7 @@ body{
 @media (max-width: 850px) {
     .top{
         background-size: 350%;
+        background-position-y: -120px;
         background-repeat: no-repeat;   
     }
     .navbar{
@@ -176,7 +177,7 @@ body{
     #landing_text{
         width: 95%;
         margin-left: calc(50% - 47.5%);
-        margin-top: 270px;
+        margin-top: 230px;
         font-size: 40px;
     }
 }

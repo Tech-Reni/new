@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.top{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* IMAGE FOR THE .TOP DIV  */
+
+.top{
+    background-image: url('img/cross.jpg');
+    background-size: contain;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: darken;
+}
+
+.navbar{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    background: transparent;
+    margin-top: 20px;
+}
+
+.img_cont{
+    width: 280px;
+    height: 70px;
+    padding: 5px;
+    display: flex;
+    border-radius: 7px;
+}
+
+.img_cont img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.logo_name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+.links_cont{
+    width: 350px;
+    margin-left: -50px;
+    padding: 5px;
+    display: flex;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    justify-content: space-between;
+}
+
+.links_cont button:hover{
+    color: rgb(170, 170, 170);
+}
+
+.give_btn{
+    width: 150px;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+    border-radius: 35px;
+    transition: all 0.2s ease-in-out;
+}
+
+.give_btn:hover{
+    width: 160px;
+}
+
+/* THIS IS THE MOBILE MENU HAMBURGER  */
+.menu_cont{
+    padding: 5px;
+    height: 100%;
+    margin-top: 13px;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+.menu_cont i {
+    font-size: xx-large;
+}
+
+#landing_text{
+    width: 80%;
+    color: white;
+    margin-top: 230px;
+    margin-left: calc(50% - 40%);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    text-align: center;
+    font-size: 70px;
+}
+
+#landing_text_ref{
+    color: white;
+    text-align: center;
+}
+
+#change-quote-btn{
+    width: 140px;
+    color: white;
+    font-family: "Plus Jakarta Sans" , sans-serif;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 7px;
+    margin-top: 40px;
+    margin-left: calc(50% - 70px);
+}
+
+.my_footer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    color: rgb(160, 160, 180);
+}
+
+/* STYLING FOR LARGE MOBILE DEVICES */
+@media (max-width: 1100px) {
+    .links_cont,.give_btn{
+        display: none;
+    }
+
+    .menu_cont{
+        display: block;
+    }
+
+    .top{
+        background-size: 200%;
+        background-repeat: no-repeat;   
+    }
+}
+
+/* STYLING FOR LARGE MOBILE DEVICES */
+@media (max-width: 850px) {
+    .top{
+        background-size: 350%;
+        background-repeat: no-repeat;   
+    }
+    .logo_name{
+        font-size: 14px;
+    }
+    #landing_text{
+        width: 95%;
+        margin-left: calc(50% - 47.5%);
+        margin-top: 300px;
+        font-size: 40px;
+    }
+}

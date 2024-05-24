@@ -37,12 +37,19 @@ body{
 .navbar{
     width: 100%;
     padding: 20px;
+    margin-top: 0px;
     display: flex;
     position: fixed;
     justify-content: space-around;
     background: transparent;
-    margin-top: 20px;
     z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.navbar.blury{
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
 }
 
 .img_cont{
@@ -115,27 +122,48 @@ body{
 
 /* THIS IS THE MOBILE NAV MENU  */
 .slide_nav_cont{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     margin-top: 40vh;
-    margin-left: 100%;
+    margin-left: 150%;
     border-radius: 100%;
     transition: all 0.3s ease;
     position: fixed;
     z-index: 5;
-    background-color: darkblue;
+    background-color: white;
+    color: white;
+    font-size: 0px;
 }
 
 .slide_nav_cont.active{
     width: 80%;
-    height: 400px;
+    height: 370px;
     position: fixed;
     border-radius: 20px;
-    background-color: darkblue;
+    background-color: white;
     margin-top: calc(50vh - 200px);
     margin-left: calc(50% - 40%);
     z-index: 5;
     transition: all 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: rgb(40, 40, 40);
+    font-size: 18px;
+    box-shadow: 
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24),
+    0 3px 6px rgba(0, 0, 0, 0.15),
+    0 10px 20px rgba(0, 0, 0, 0.10),
+    0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.slide_nav_cont #menu_close_btn{
+    margin-left: calc(100% - 50px);
+    font-family: cursive;
+    font-size: xx-large;
+    font-weight: 400;
+    color: red;
 }
 
 #landing_text{
@@ -162,6 +190,12 @@ body{
     padding: 7px;
     margin-top: 40px;
     margin-left: calc(50% - 70px);
+}
+
+.useless{
+    width: 100%;
+    height: 300px;
+    background-color: white;
 }
 
 .my_footer{
@@ -193,9 +227,6 @@ body{
         background-size: 350%;
         background-position-y: -120px;
         background-repeat: no-repeat;   
-    }
-    .navbar{
-        margin-top: 8px;
     }
     .logo_name{
         font-size: 14px;

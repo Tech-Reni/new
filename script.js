@@ -52,7 +52,17 @@ button.addEventListener('click', () => {
 
 const hamburger = document.getElementById("hamburger");
 const slide_nav_cont = document.getElementById("slide_nav_cont"); 
+const close_btn = document.getElementById("menu_close_btn");
 
 hamburger.addEventListener("click",  () => {
     slide_nav_cont.classList.toggle("active");
+});
+
+close_btn.addEventListener("click",  () => {
+    slide_nav_cont.classList.toggle("active");
+});
+
+window.addEventListener("scroll" , () => {
+    let navbar = document.getElementById("navbar");
+    navbar.classList.toggle("blury" , window.scrollY > 100);
 })

@@ -44,12 +44,15 @@ body{
     background: transparent;
     z-index: 2;
     transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
 }
 
 .navbar.blury{
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
 }
 
 .img_cont{
@@ -160,7 +163,7 @@ body{
 
 .slide_nav_cont #menu_close_btn{
     margin-left: calc(100% - 50px);
-    font-family: cursive;
+    font-family: "Ubuntu", sans-serif;
     font-size: xx-large;
     font-weight: 400;
     color: red;
@@ -199,10 +202,45 @@ body{
 }
 
 .my_footer{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    background: rgb(26, 26, 60);
+    color: rgb(185, 185, 185);
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
-    color: rgb(160, 160, 180);
+    justify-content: space-around;
+}
+
+.my_footer_copyright{
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+}
+
+.my_footer_icons{
+    width: 160px;
+    height: 40px;
+    padding: 10px;
+    font-size: large;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.my_footer_icons i:hover{
+    cursor: pointer;
+    color: rgb(240, 240, 240);
+}
+
+.my_footer_mail{
+    height: 40px;
+    padding: 8px;
+}
+
+.my_footer_mail:hover{
+    cursor: pointer;
+    color: rgb(240, 240, 240);
 }
 
 /* STYLING FOR LARGE MOBILE DEVICES */
@@ -236,5 +274,10 @@ body{
         margin-left: calc(50% - 47.5%);
         margin-top: 230px;
         font-size: 40px;
+    }
+    .my_footer{
+        text-align: center;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
 }

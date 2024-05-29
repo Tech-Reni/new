@@ -6,6 +6,8 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('#landing_text', { origin: 'bottom' });
+ScrollReveal().reveal('.yearly_banner_text', { origin: 'right' });
+ScrollReveal().reveal('.yearly_banner_img', { origin: 'left' });
 ScrollReveal().reveal('#landing_text_ref', { origin: 'left' });
 
 const quotes = [

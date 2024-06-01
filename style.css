@@ -125,11 +125,10 @@ body{
 
 /* THIS IS THE MOBILE NAV MENU  */
 .slide_nav_cont{
-    width: 20px;
-    height: 20px;
+    width: 80%;
+    height: 370px;
     margin-top: 40vh;
     margin-left: 150%;
-    border-radius: 100%;
     transition: all 0.3s ease;
     position: fixed;
     z-index: 5;
@@ -205,7 +204,7 @@ body{
 .ministry-arms {
     width: 100%;
     height: 100%;
-    padding-top: 15px;
+    padding-top: 25px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -221,7 +220,7 @@ body{
     overflow:hidden;
     margin-top: 10px;
     margin-bottom: 30px;
-    box-shadow: 0 0px 30px 0 rgba(0, 0, 0, 0.4), 0 5px 2px -10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.4), 0 5px 2px -10px rgba(0, 0, 0, 0.5);
 }
 
 .ministry-arms .arm::before {
